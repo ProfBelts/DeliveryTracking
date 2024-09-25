@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\dev\\Elinnov\\DeliveryTracking\\DeliveryTracking\\wwwroot\\css\\reset.css",
+      "PackagePath": "staticwebassets\\css\\reset.css"
+    },
+    {
       "Id": "D:\\dev\\Elinnov\\DeliveryTracking\\DeliveryTracking\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

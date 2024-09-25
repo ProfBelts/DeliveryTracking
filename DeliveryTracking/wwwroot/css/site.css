@@ -71,6 +71,10 @@ p {
   color: #000000ff;
 }
 
+.copy-button {
+  background-color: #636ae8ff;
+}
+
 .copy-icon svg {
   width: 16px;
   height: auto;

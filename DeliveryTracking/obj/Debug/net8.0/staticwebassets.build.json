@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/Ou04a+3PePIeKqs4lup5+PxZGniAwHQK6jecyHQhM8=",
+  "Hash": "XLOTSR8GAE+dqosHwvlRDPiA6C6Ga2wj4Jk5ETC2G8M=",
   "Source": "DeliveryTracking",
   "BasePath": "_content/DeliveryTracking",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\dev\\Elinnov\\DeliveryTracking\\DeliveryTracking\\wwwroot\\css\\reset.css",
+      "SourceId": "DeliveryTracking",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dev\\Elinnov\\DeliveryTracking\\DeliveryTracking\\wwwroot\\",
+      "BasePath": "_content/DeliveryTracking",
+      "RelativePath": "css/reset.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\reset.css"
+    },
     {
       "Identity": "D:\\dev\\Elinnov\\DeliveryTracking\\DeliveryTracking\\wwwroot\\css\\site.css",
       "SourceId": "DeliveryTracking",
