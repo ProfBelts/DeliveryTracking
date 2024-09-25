@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XLOTSR8GAE+dqosHwvlRDPiA6C6Ga2wj4Jk5ETC2G8M=",
+  "Hash": "8AOOpC38CQr9UZeEhNsAotYvmaKPmSuxU3UVcYhj1bc=",
   "Source": "DeliveryTracking",
   "BasePath": "_content/DeliveryTracking",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\dev\\Elinnov\\DeliveryTracking\\DeliveryTracking\\wwwroot\\images\\avatar.jpg",
+      "SourceId": "DeliveryTracking",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dev\\Elinnov\\DeliveryTracking\\DeliveryTracking\\wwwroot\\",
+      "BasePath": "_content/DeliveryTracking",
+      "RelativePath": "images/avatar.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\avatar.jpg"
     },
     {
       "Identity": "D:\\dev\\Elinnov\\DeliveryTracking\\DeliveryTracking\\wwwroot\\js\\site.js",

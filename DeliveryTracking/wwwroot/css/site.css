@@ -73,9 +73,55 @@ p {
 
 .copy-button {
   background-color: #636ae8ff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.copy-button:hover {
+  background: #4850e4ff;
+}
+
+.copy-button:hover:active {
+  background: #2c35e0ff;
+}
+
+.copy-button:disabled {
+  opacity: 0.4;
 }
 
 .copy-icon svg {
   width: 16px;
   height: auto;
+}
+
+.copy-text {
+  margin-left: 6px;
+}
+
+.address-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.parcel-info {
+  margin-top: 20px;
+}
+
+.deliverer-image {
+  vertical-align: middle;
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
 }
