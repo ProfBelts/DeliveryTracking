@@ -1,43 +1,77 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
-    max-width: 280px;
+  max-width: 280px;
 }
 
 /* styles for validation helpers */
 .field-validation-error {
-    color: #b94a48;
+  color: #b94a48;
 }
 
 .field-validation-valid {
-    display: none;
+  display: none;
 }
 
 input.input-validation-error {
-    border: 1px solid #b94a48;
+  border: 1px solid #b94a48;
 }
 
 input[type="checkbox"].input-validation-error {
-    border: 0 none;
+  border: 0 none;
 }
 
 .validation-summary-errors {
-    color: #b94a48;
+  color: #b94a48;
 }
 
 .validation-summary-valid {
-    display: none;
+  display: none;
 }
 
+p {
+  margin: 0;
+}
+
+.section {
+  padding: 0 50px;
+}
+
+.info-section-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-label {
+  font-family: "Archivo", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.info-section-flex {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000000ff;
+}
+
+.copy-icon svg {
+  width: 16px;
+  height: auto;
+}
