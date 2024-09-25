@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\profb\\source\\repos\\DeliveryTracking\\DeliveryTracking\\DeliveryTracking.csproj": {}
+    "C:\\Users\\SIEN PINEDA\\OneDrive\\Desktop\\School\\5Y1S\\Internship\\Elinnov_Projects\\Tracking Page\\DeliveryTracking\\DeliveryTracking\\DeliveryTracking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\profb\\source\\repos\\DeliveryTracking\\DeliveryTracking\\DeliveryTracking.csproj": {
+    "C:\\Users\\SIEN PINEDA\\OneDrive\\Desktop\\School\\5Y1S\\Internship\\Elinnov_Projects\\Tracking Page\\DeliveryTracking\\DeliveryTracking\\DeliveryTracking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\profb\\source\\repos\\DeliveryTracking\\DeliveryTracking\\DeliveryTracking.csproj",
+        "projectUniqueName": "C:\\Users\\SIEN PINEDA\\OneDrive\\Desktop\\School\\5Y1S\\Internship\\Elinnov_Projects\\Tracking Page\\DeliveryTracking\\DeliveryTracking\\DeliveryTracking.csproj",
         "projectName": "DeliveryTracking",
-        "projectPath": "C:\\Users\\profb\\source\\repos\\DeliveryTracking\\DeliveryTracking\\DeliveryTracking.csproj",
-        "packagesPath": "C:\\Users\\profb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\profb\\source\\repos\\DeliveryTracking\\DeliveryTracking\\obj\\",
+        "projectPath": "C:\\Users\\SIEN PINEDA\\OneDrive\\Desktop\\School\\5Y1S\\Internship\\Elinnov_Projects\\Tracking Page\\DeliveryTracking\\DeliveryTracking\\DeliveryTracking.csproj",
+        "packagesPath": "C:\\Users\\SIEN PINEDA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SIEN PINEDA\\OneDrive\\Desktop\\School\\5Y1S\\Internship\\Elinnov_Projects\\Tracking Page\\DeliveryTracking\\DeliveryTracking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\profb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SIEN PINEDA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
