@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NdY1cGdkxRhEoNExJr4OnI7yISRVYxTdi+n7PX77W8s=",
+  "Hash": "Y6EUZplTQKcGvLEEJiJUzlXsG7Kd72Dy5rzqEzfc03U=",
   "Source": "DeliveryTracking",
   "BasePath": "_content/DeliveryTracking",
   "Mode": "Default",
@@ -34,6 +34,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\SIEN PINEDA\\OneDrive\\Desktop\\School\\5Y1S\\Internship\\Elinnov_Projects\\Tracking Page\\DeliveryTracking\\DeliveryTracking\\wwwroot\\css\\status.css",
+      "SourceId": "DeliveryTracking",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SIEN PINEDA\\OneDrive\\Desktop\\School\\5Y1S\\Internship\\Elinnov_Projects\\Tracking Page\\DeliveryTracking\\DeliveryTracking\\wwwroot\\",
+      "BasePath": "_content/DeliveryTracking",
+      "RelativePath": "css/status.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\status.css"
     },
     {
       "Identity": "C:\\Users\\SIEN PINEDA\\OneDrive\\Desktop\\School\\5Y1S\\Internship\\Elinnov_Projects\\Tracking Page\\DeliveryTracking\\DeliveryTracking\\wwwroot\\js\\site.js",
