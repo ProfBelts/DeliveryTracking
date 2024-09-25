@@ -6179,19 +6179,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SIEN PINEDA\\.nuget\\packages\\": {}
+    "C:\\Users\\ketol\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SIEN PINEDA\\OneDrive\\Desktop\\School\\5Y1S\\Internship\\Elinnov_Projects\\Tracking Page\\DeliveryTracking\\DeliveryTracking\\DeliveryTracking.csproj",
+      "projectUniqueName": "D:\\dev\\Elinnov\\DeliveryTracking\\DeliveryTracking\\DeliveryTracking.csproj",
       "projectName": "DeliveryTracking",
-      "projectPath": "C:\\Users\\SIEN PINEDA\\OneDrive\\Desktop\\School\\5Y1S\\Internship\\Elinnov_Projects\\Tracking Page\\DeliveryTracking\\DeliveryTracking\\DeliveryTracking.csproj",
-      "packagesPath": "C:\\Users\\SIEN PINEDA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SIEN PINEDA\\OneDrive\\Desktop\\School\\5Y1S\\Internship\\Elinnov_Projects\\Tracking Page\\DeliveryTracking\\DeliveryTracking\\obj\\",
+      "projectPath": "D:\\dev\\Elinnov\\DeliveryTracking\\DeliveryTracking\\DeliveryTracking.csproj",
+      "packagesPath": "C:\\Users\\ketol\\.nuget\\packages\\",
+      "outputPath": "D:\\dev\\Elinnov\\DeliveryTracking\\DeliveryTracking\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SIEN PINEDA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ketol\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6257,7 +6257,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
