@@ -1,23 +1,16 @@
 ﻿
-<div class="status-section">
+
+<div class="order-status">
     <h2>Order Status</h2>
-    <ul class="stepper">
-        <li class="step done">
-            <div class="item">
-                Order Placed
-            </div>
-        </li>
-        <li class="step current">
-            <div class="item">
-                Shipping
-            </div>
-        </li>
-        <li class="step ready">
-            <div class="item">
-                Delivered
-            </div>
-        </li>
-    </ul>
+    <div class="progress-bar">
+      <ul class="row">
+          <li class="col done">Order Placed</li>
+          <li class="col current">Picked Up</li>
+          <li class="col">Shipping</li>
+          <li class="col">Deliverd</li>
+      </ul>
+    </div>
 </div>
+
 
 <link href="~/css/status.css" rel="stylesheet" type="text/css" asp-append-version="true" />
