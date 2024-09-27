@@ -1,25 +1,16 @@
-using Microsoft.EntityFrameworkCore;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add Razor Pages
+// Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddControllersWithViews();
-
-// Add session support
-
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (!app.Environment.IsDevelopment())
 {
-    //app.UseMigrationsEndPoint();
-}
-else
-{
-    app.UseExceptionHandler("/Home/Error");
+    app.UseExceptionHandler("/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -28,21 +19,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-// Redirect index.html to Home/Index
-app.Use(async (context, next) =>
-{
-    if (context.Request.Path.Equals("/index.html", StringComparison.OrdinalIgnoreCase))
-    {
-        context.Response.Redirect("/Home");
-        return;
-    }
-    await next();
-});
+app.UseAuthorization();
 
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
 
 app.Run();
