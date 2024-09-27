@@ -1,4 +1,18 @@
-﻿.progress-bar {
+﻿.order-status-container {
+    margin-bottom: 100px;
+    text-align: center; /* Center text */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+.order-status-container h2 {
+    font-family: "Archivo", sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.progress-bar {
     padding: 10px;
     overflow: hidden;
 }
