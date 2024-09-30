@@ -5,7 +5,19 @@
 }
 
 <div class="tracking-container">
-    <h1>Delivery Tracker</h1>
+    <div class="header-container">
+        <div class="logo-title">
+            <img src="/path-to-your-icon.png" alt="Logo" class="logo-icon">
+            <h1>Delivery Tracker</h1>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Enter Parcel ID" class="search-input">
+            <button class="search-btn">
+                <i class="fa fa-search"></i> Search
+            </button>
+        </div>
+    </div>
     
     <div class="section status-section">
         <partial name="Partials/_Status" />
@@ -19,3 +31,4 @@
         <partial name="Partials/_TrackDetails" />
     </div>
 </div>
+
