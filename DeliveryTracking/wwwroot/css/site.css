@@ -1,169 +1,34 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
-body {
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-
-/* Set padding to keep content from hitting the edges */
-.body-content {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-  max-width: 280px;
-}
-
-/* styles for validation helpers */
-.field-validation-error {
-  color: #b94a48;
-}
-
-.field-validation-valid {
-  display: none;
-}
-
-input.input-validation-error {
-  border: 1px solid #b94a48;
-}
-
-input[type="checkbox"].input-validation-error {
-  border: 0 none;
-}
-
-.validation-summary-errors {
-  color: #b94a48;
-}
-
-.validation-summary-valid {
-  display: none;
-}
-
-.info-section {
-  font-family: "Inter", sans-serif;
+﻿html {
   font-size: 14px;
-  line-height: 22px;
-  font-weight: 400;
-  color: #000000ff;
-  padding: 0 50px;
 }
 
-.info-section-container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
 }
 
-.parcel-info-container {
-  padding-right: 50px;
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-.deliverer-info-container {
-  padding-left: 50px;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
-.info-section-container p {
-  margin: 0;
-}
+/* Custom Styling */
 
-.info-label {
-  font-family: "Archivo", sans-serif;
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: 700;
-}
-
-.copy-button {
-  background-color: #636ae8ff;
-  display: inline-flex;
-  align-items: center;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 6px 12px;
-
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: inherit;
-}
-
-.copy-button:hover {
-  background: #4850e4ff;
-}
-
-.copy-button:hover:active {
-  background: #2c35e0ff;
-}
-
-.copy-button:disabled {
-  opacity: 0.4;
-}
-
-.copy-icon svg {
-  width: 16px;
-  height: auto;
-}
-
-.copy-text {
-  text-wrap: nowrap;
-  margin-left: 6px;
-}
-
-.address-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.deliverer-profile-container {
-  margin-top: 10px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.deliverer-image {
-  vertical-align: middle;
-  border-radius: 50%;
-  width: 80px;
-  height: auto;
-}
-
-.deliverer-info p:not(:last-child) {
-  margin-bottom: 5px;
+.tracking-container {
+  padding: 50px;
 }
 
 @media (max-width: 1024px) {
-  .info-section {
-    padding: 0 15px;
-  }
-
-  .info-section-container {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 50px;
-  }
-
-  .address-container {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .parcel-info-container {
-    padding-right: 0;
-  }
-
-  .deliverer-info-container {
-    padding-left: 0;
-  }
-
-  .info-section-inner-container {
-    margin: 0 auto;
-    max-width: 500px;
+  .tracking-container {
+    padding: 15px;
   }
 }

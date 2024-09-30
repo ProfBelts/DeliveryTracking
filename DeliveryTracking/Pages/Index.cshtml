@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Tracking page";
+}
+
+<div class="tracking-container">
+    <h1>Delivery Tracker</h1>
+    
+    <div class="section status-section">
+        <partial name="Partials/_Status" />
+    </div>
+
+    <div class="section info-section">
+        <partial name="Partials/_InfoPanels" />
+    </div>
+
+    <div class="section track-details-section">
+        <partial name="Partials/_TrackDetails" />
+    </div>
+</div>
