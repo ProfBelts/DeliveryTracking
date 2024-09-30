@@ -1,0 +1,99 @@
+﻿.order-status-container {
+  margin-bottom: 100px;
+  text-align: center; /* Center text */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+}
+
+.order-status-container h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.tracking-progress-bar {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.tracking-progress-bar .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.tracking-progress-bar .row .col {
+  flex: 1;
+  position: relative;
+  text-align: center;
+  color: #aaa;
+  font-family: Arial, sans-serif;
+  padding-top: 60px; /* Increased padding to add space between the circle and label */
+}
+
+.tracking-progress-bar .row .col:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: #ccc;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.tracking-progress-bar .row .col:first-child:before {
+  left: 50%;
+}
+
+.tracking-progress-bar .row .col:last-child:before {
+  right: 50%;
+}
+
+.tracking-progress-bar .row .col:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.tracking-progress-bar .row .col.done:after {
+  background-color: #636ae8ff;
+}
+
+.tracking-progress-bar .row .col.done:before {
+  background-color: #636ae8ff;
+}
+
+.tracking-progress-bar .row .col.current:after {
+  background-color: white;
+  border: 3px solid #636ae8ff;
+}
+
+.tracking-progress-bar .row .col.current:before {
+  background-color: #636ae8ff;
+}
+
+.tracking-progress-bar .row .col.done {
+  color: #636ae8ff;
+}
+
+.tracking-progress-bar .row .col.current {
+  color: #636ae8ff;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}
