@@ -1,9 +1,8 @@
 ﻿.order-info-container {
     /*    display: flex;*/
     padding: 20px;
-    width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
+    width: 60%;
+    margin: 30px auto;
     font-family: Archivo; /* Heading */
 }
 
@@ -31,9 +30,9 @@
     border-radius: 6px; /* border-m */
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
     margin: auto;
     position: relative; /* To position icon outside */
+    width: 100%;
 }
 
 .status-header {
@@ -42,8 +41,8 @@
 }
 
 .status-icon {
-    width: 75px; /* Made the icon larger */
-    height: 75px;
+    width: 80px; /* Made the icon larger */
+    height: 80px;
     margin-right: 16px;
     background-color: #626ed4;
     border-radius: 50%;
@@ -52,11 +51,10 @@
     justify-content: center;
     position: absolute;
     left: -20px; /* Positioning it outside the box */
-   
 }
 
     .status-icon i {
-        font-size: 32px; /* Made the icon larger inside */
+        font-size: 35px; /* Made the icon larger inside */
         color: white;
     }
 
@@ -64,18 +62,18 @@
     margin-left: 60px; /* Adjusted margin to compensate for larger icon */
 }
 
-.status-info h3 {
-    margin: 0;
-    font-size: 32px;
-    font-weight: bold;
-    color: #333;
-}
+    .status-info h3 {
+        margin: 0;
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
+    }
 
-.status-info p {
-    margin: 4px 0 0;
-    font-size: 16px;
-    color: #666;
-}
+    .status-info p {
+        margin: 4px 0 0;
+        font-size: 16px;
+        color: #666;
+    }
 
 hr {
     border: 0;
@@ -97,6 +95,6 @@ hr {
     .delivery-details strong {
         font-weight: bold;
         color: #333;
-        margin-left:10px;
-        margin-right:20px;
+        margin-left: 10px;
+        margin-right: 20px;
     }

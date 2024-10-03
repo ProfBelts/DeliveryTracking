@@ -1,99 +1,100 @@
-﻿.order-status-container {
-  margin-bottom: 100px;
-  text-align: center; /* Center text */
-  margin-left: auto; /* Center horizontally */
-  margin-right: auto; /* Center horizontally */
+﻿.order-info-container {
+    /*    display: flex;*/
+    padding: 20px;
+    width: 60%;
+    margin: 30px auto;
+    font-family: Archivo; /* Heading */
 }
 
-.order-status-container h2 {
-  font-family: "Archivo", sans-serif;
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: 700;
+.tracking-details-container h2 {
+    font-family: Archivo; /* Heading */
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #171A1FFF; /* neutral-900 */
 }
 
-.tracking-progress-bar {
-  padding: 10px;
-  overflow: hidden;
+.order-info {
+    font-family: Inter; /* Body */
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #6E7787FF; /* neutral-550 */
+    margin: 10px 0;
 }
 
-.tracking-progress-bar .row {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
-  width: 100%;
+.order-status-container {
+    display: flex;
+    flex-direction: column;
+    background: #e9ecef; /* neutral-200 */
+    border-radius: 6px; /* border-m */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    position: relative; /* To position icon outside */
+    width: 100%;
 }
 
-.tracking-progress-bar .row .col {
-  flex: 1;
-  position: relative;
-  text-align: center;
-  color: #aaa;
-  font-family: Arial, sans-serif;
-  padding-top: 60px; /* Increased padding to add space between the circle and label */
+.status-header {
+    display: flex;
+    align-items: center;
 }
 
-.tracking-progress-bar .row .col:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background-color: #ccc;
-  z-index: 1;
-  transform: translateY(-50%);
+.status-icon {
+    width: 80px; /* Made the icon larger */
+    height: 80px;
+    margin-right: 16px;
+    background-color: #626ed4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -20px; /* Positioning it outside the box */
 }
 
-.tracking-progress-bar .row .col:first-child:before {
-  left: 50%;
+    .status-icon i {
+        font-size: 35px; /* Made the icon larger inside */
+        color: white;
+    }
+
+.status-info {
+    margin-left: 60px; /* Adjusted margin to compensate for larger icon */
 }
 
-.tracking-progress-bar .row .col:last-child:before {
-  right: 50%;
+    .status-info h3 {
+        margin: 0;
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .status-info p {
+        margin: 4px 0 0;
+        font-size: 16px;
+        color: #666;
+    }
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 16px 0;
 }
 
-.tracking-progress-bar .row .col:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
-  background-color: #ccc;
-  border-radius: 50%;
-  z-index: 2;
+.delivery-details {
+    display: flex;
+    justify-content: space-between;
 }
 
-.tracking-progress-bar .row .col.done:after {
-  background-color: #636ae8ff;
-}
+    .delivery-details .from, .delivery-details .to {
+        font-size: 14px;
+        color: #333;
+        margin-right: 10px;
+    }
 
-.tracking-progress-bar .row .col.done:before {
-  background-color: #636ae8ff;
-}
-
-.tracking-progress-bar .row .col.current:after {
-  background-color: white;
-  border: 3px solid #636ae8ff;
-}
-
-.tracking-progress-bar .row .col.current:before {
-  background-color: #636ae8ff;
-}
-
-.tracking-progress-bar .row .col.done {
-  color: #636ae8ff;
-}
-
-.tracking-progress-bar .row .col.current {
-  color: #636ae8ff;
-}
-
-ul,
-li {
-  padding: 0;
-  list-style: none;
-}
+    .delivery-details strong {
+        font-weight: bold;
+        color: #333;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
