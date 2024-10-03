@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Tracking Page";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/info-panels.css" />
+    <link rel="stylesheet" href="~/css/status.css" />
+    <link rel="stylesheet" href="~/css/track-detail.css" />
+}
+
+<h1>Hello world</h1>
+
+<div class="section status-section">
+    <partial name="Partials/_Status" />
+</div>
+
+<div class="section info-section">
+    <partial name="Partials/_InfoPanels" />
+</div>
+
+<div class="section track-details-section">
+    <partial name="Partials/_TrackDetails" />
+</div>

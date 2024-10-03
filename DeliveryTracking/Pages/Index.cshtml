@@ -1,23 +1,14 @@
 ﻿@page
-@model IndexModel
 @{
     ViewData["Title"] = "Tracking page";
 }
 
-<div class="tracking-container">
-    <div class="header-container">
-        <div class="logo-title">
-            <img src="/path-to-your-icon.png" alt="Logo" class="logo-icon">
-            <h1>Delivery Tracker</h1>
-        </div>
-
-        <div class="search-bar">
-            <input type="text" placeholder="Enter Parcel ID" class="search-input">
-            <button class="search-btn">
-                <i class="fa fa-search"></i> Search
-            </button>
-        </div>
-    </div>
+@section Styles 
+{
+    <link rel="stylesheet" href="~/css/info-panels.css" />
+    <link rel="stylesheet" href="~/css/status.css" />
+    <link rel="stylesheet" href="~/css/track-detail.css" />
+}
     
     <div class="section status-section">
         <partial name="Partials/_Status" />
