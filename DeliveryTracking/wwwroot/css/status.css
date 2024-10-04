@@ -8,8 +8,8 @@
 
 .tracking-details-container h2 {
   font-family: "Archivo", system-ui;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 2.5vw; /* Smaller font size for full window */
+  line-height: 3.5vw; /* Adjusted line height */
   font-weight: 700;
   color: #171a1fff; /* neutral-900 */
   margin: 0;
@@ -17,11 +17,10 @@
 
 .order-info {
   font-family: "Inter", system-ui;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.5vw; /* Smaller font size */
+  line-height: 2vw; /* Adjusted line height */
   font-weight: 500;
   color: #6e7787ff; /* neutral-550 */
-  /* margin-bottom: 10px; */
 }
 
 .order-status-container {
@@ -42,20 +41,20 @@
 }
 
 .status-icon {
-  width: 80px; /* Made the icon larger */
-  height: 80px;
+  width: 7vw; /* Proportional width based on viewport */
+  height: 7vw; /* Proportional height */
   margin-right: 16px;
   background-color: #626ed4;
-  border-radius: 50%;
+  border-radius: 50%; /* Keeps the circle shape */
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: -20px; /* Positioning it outside the box */
+  left: -3vw; /* Positioning it slightly outside the box */
 }
 
 .status-icon i {
-  font-size: 35px; /* Made the icon larger inside */
+  font-size: 3vw; /* Proportional icon size inside the circle */
   color: white;
 }
 
@@ -64,19 +63,19 @@
 }
 
 .status-info {
-  margin-left: 60px; /* Adjusted margin to compensate for larger icon */
+  margin-left: 10vw; /* Adjusted margin to compensate for larger icon */
 }
 
 .status-info h3 {
   margin: 0;
-  font-size: 32px;
+  font-size: 2.4vw; /* Smaller font size */
   font-weight: bold;
   color: #333;
 }
 
 .status-info p {
   margin: 4px 0 0;
-  font-size: 16px;
+  font-size: 1.4vw; /* Smaller font size */
   color: #666;
 }
 
@@ -93,7 +92,7 @@ hr {
 
 .delivery-details .from,
 .delivery-details .to {
-  font-size: 14px;
+  font-size: 1.2vw; /* Smaller font size */
   color: #333;
   margin-right: 10px;
 }
@@ -103,6 +102,42 @@ hr {
   color: #333;
   margin-left: 10px;
   margin-right: 20px;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  .status-icon {
+    width: 15vw; /* Larger and proportional circle for mobile view */
+    height: 15vw; /* Proportional height for mobile view */
+    left: -5vw; /* Adjusted positioning */
+  }
+
+  .status-icon i {
+    font-size: 6vw; /* Larger icon size inside the circle */
+  }
+
+  .tracking-details-container h2 {
+    font-size: 5vw; /* Proportional font size for smaller screens */
+    line-height: 5vw; /* Adjusted line height */
+  }
+
+  .order-info {
+    font-size: 3vw; /* Proportional font size for smaller screens */
+    line-height: 3vw; /* Adjusted line height */
+  }
+
+  .status-info h3 {
+    font-size: 5vw; /* Proportional font size */
+  }
+
+  .status-info p {
+    font-size: 3vw; /* Proportional font size */
+  }
+
+  .delivery-details .from,
+  .delivery-details .to {
+    font-size: 2vw; /* Proportional font size */
+  }
 }
 
 @media (max-width: 1024px) {
