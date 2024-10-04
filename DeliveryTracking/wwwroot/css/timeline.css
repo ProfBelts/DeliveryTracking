@@ -4,9 +4,10 @@
 }
 
 .timeline-wrapper {
-  max-width: 1080px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 .timeline-wrapper .title-wrapper {

@@ -1,5 +1,5 @@
 ﻿.order-info-container {
-  max-width: 1080px;
+  max-width: 900px;
   margin: 10px auto;
   font-family: "Archivo", system-ui;
 }
@@ -101,4 +101,10 @@ hr {
   color: #333;
   margin-left: 10px;
   margin-right: 20px;
+}
+
+@media (max-width: 1024px) {
+  .order-info-container {
+    padding-left: 10px;
+  }
 }
