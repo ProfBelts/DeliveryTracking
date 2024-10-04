@@ -3,23 +3,13 @@
     ViewData["Title"] = "Tracking page";
 }
 
-@section Styles 
+@section Styles
 {
-    <link rel="stylesheet" href="~/css/info-panels.css" />
-    <link rel="stylesheet" href="~/css/status.css" />
-    <link rel="stylesheet" href="~/css/track-detail.css" />
+    <link rel="stylesheet" href="~/css/status.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/timeline.css" type="text/css" />
 }
-    
-    <div class="section status-section">
-        <partial name="Partials/_Status" />
-    </div>
 
-    <div class="section info-section">
-        <partial name="Partials/_InfoPanels" />
-    </div>
-
-    <div class="section track-details-section">
-        <partial name="Partials/_TrackDetails" />
-    </div>
+<div class="inner-wrapper">
+    <partial name="Partials/_Status" />
+    <partial name="Partials/_Timeline" />
 </div>
-
