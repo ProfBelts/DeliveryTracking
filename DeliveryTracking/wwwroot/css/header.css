@@ -22,7 +22,7 @@
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -34,7 +34,7 @@ h1 {
 .search-input {
   width: 400px;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 15px;
   border: 1px solid #ddd;
   outline: none;
   transition: border-color 0.3s ease;
@@ -48,7 +48,7 @@ h1 {
   background-color: #5f63f2;
   color: white;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 15px;
   border: none;
   margin-left: 10px;
   display: flex;
@@ -149,8 +149,9 @@ h1 {
     }
 
     h1 {
-        font-size: 18px;
+        font-size: 20px;
         text-align: center;
+        margin-top:15px;
         margin-bottom: 20px; /* Adds space between the title and the other elements */
     }
 
@@ -172,7 +173,7 @@ h1 {
     }
 
     .search-input {
-        width: 200px; /* Keep the search bar a bit shorter on mobile */
+        width: 300px; /* Keep the search bar a bit shorter on mobile */
         padding: 8px;
         font-size: 15px;
     }
@@ -181,5 +182,6 @@ h1 {
         padding: 10px 10px;
         font-size: 10px;
         text-align: center;
+        
     }
 }
