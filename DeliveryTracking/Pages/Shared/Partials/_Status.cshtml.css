@@ -2,8 +2,12 @@
     /*    display: flex;*/
     padding: 20px;
     width: 60%;
-    margin: 30px auto;
+    margin: 10px auto;
     font-family: Archivo; /* Heading */
+}
+
+.tracking-details-container{
+    margin-bottom: 20px;
 }
 
 .tracking-details-container h2 {
@@ -12,6 +16,7 @@
     line-height: 48px;
     font-weight: 700;
     color: #171A1FFF; /* neutral-900 */
+    margin: 0;
 }
 
 .order-info {

@@ -4,21 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - DeliveryTrackingPage</title>
-
-    <link rel="stylesheet" href="~/css/reset.css" type="text/css" />
     <link rel="stylesheet" href="~/css/site.css" type="text/css" />
     <link rel="stylesheet" href="~/css/header.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/status.css" type="text/css" />
     <link rel="stylesheet" href="~/css/info-panels.css" type="text/css" />
     <link rel="stylesheet" href="~/css/track-detail.css" type="text/css" />
-    
-    <link rel="stylesheet" href="~/DeliveryTracking.styles.css" asp-appendversion="true" />
 
+    <!-- For adding css to razor pages -->
+    <!-- <link rel="stylesheet" href="~/DeliveryTracking.styles.css" asp-appendversion="true" /> -->
     <!-- Add Bootstrap Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
+    @RenderSection("Styles", required: false)
 
 </head>
 <body>
+    <div>
+        <partial name="Partials/_Header" />
+    </div>
     <div>
         @RenderBody()
     </div>
