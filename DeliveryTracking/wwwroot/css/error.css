@@ -1,68 +1,56 @@
-﻿body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
-
-.error-container {
+﻿.error-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    background-color: #f4f4f4;
+
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 50px auto;
 }
 
 .error-content {
-    text-align: center;
-    padding: 40px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
 }
 
-    .error-content h1 {
-        font-size: 100px;
-        margin: 0;
-        color: red;
-    }
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
+    background-color: #6366f1; /* Blue circle background */
+    border-radius: 50%; /* Makes it a circle */
+    margin: 20px auto;
+}
 
-    .error-content p {
-        font-size: 20px;
-        color: #333;
-        margin-top: 10px;
-    }
+.icon-img {
+    width: 60px; /* Adjust icon size inside the circle */
+    height: 60px;
+}
 
-     .error-content h3 {
-           font-weight: bold; 
-           font-size: 30px;
-         }
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
 
-
+.small-info {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
 
 .btn-home {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #5f63f2;
-    color: white;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #6366f1;
+    color: #fff;
     text-decoration: none;
+    font-size: 16px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
     .btn-home:hover {
-        background-color: #4e54c8;
+        background-color: #4f46e5;
     }
-
-@media (max-width: 600px) {
-    .error-content h1 {
-        font-size: 80px;
-    }
-
-    .error-content p {
-        font-size: 16px;
-    }
-
-    .btn-home {
-        padding: 8px 16px;
-    }
-}
