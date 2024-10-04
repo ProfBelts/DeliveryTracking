@@ -17,17 +17,16 @@
   color: #323842ff;
   padding-right: 40px;
   padding-top: 30px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
 }
 
 .timeline-wrapper .title-wrapper:before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: calc(var(--circle-size) / 2 + 42px);
   bottom: 0;
   border-left: 1px dashed #9095a0ff;
-  transform: translateX(calc(var(--circle-size) / 2 + 42px));
 }
 
 .stepper-wrapper {
