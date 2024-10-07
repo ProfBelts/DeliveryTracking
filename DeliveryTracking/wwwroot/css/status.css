@@ -50,7 +50,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: -3vw; /* Positioning it slightly outside the box */
+  left: -20px; /* Positioning it slightly outside the box */
 }
 
 .status-icon i {
@@ -107,7 +107,7 @@ hr {
 /* Media Queries for Mobile View */
 @media (max-width: 768px) {
   .status-icon {
-    width: 90px; 
+    width: 90px;
     height: 90px; /* Proportional height for mobile view */
   }
 
