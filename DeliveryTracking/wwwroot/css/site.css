@@ -79,6 +79,11 @@ html {
   padding: 50px;
 }
 
+.inner-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 @media (max-width: 1024px) {
   .main-container {
     padding: 15px;
