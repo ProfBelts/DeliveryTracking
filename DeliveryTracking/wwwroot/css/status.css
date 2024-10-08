@@ -1,5 +1,5 @@
 ﻿.order-info-container {
-  font-family: "Archivo", system-ui;
+  font-family: "Archivo", sans-serif;
 }
 
 .tracking-details-container {
@@ -7,50 +7,48 @@
 }
 
 .tracking-details-container h2 {
-  font-family: "Archivo", system-ui;
-  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  line-height: 48px;
   font-weight: 700;
-  color: #171a1fff; /* neutral-900 */
-  margin: 0;
-  margin-bottom: 10px;
+  color: #171a1fff;
 }
 
 .order-info {
-  font-family: "Inter", system-ui;
-  font-size: 20px; /* Smaller font size */
-  line-height: 10px; /* Adjusted line height */
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
   font-weight: 500;
-  color: #6e7787ff; /* neutral-550 */
+  color: #6f7787ff;
 }
 
 .order-status-container {
-  display: flex;
-  flex-direction: column;
-  background: #e9ecef; /* neutral-200 */
-  border-radius: 6px; /* border-m */
-  padding: 20px;
+  background: #e9ecef;
+  border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: auto;
-  position: relative; /* To position icon outside */
-  width: 100%;
 }
 
 .status-header {
+  padding: 20px 0;
+}
+
+.status-info-container {
   display: flex;
+  width: fit-content;
   align-items: center;
-  margin: 20px;
+  gap: 44px;
+  transform: translateX(-20px);
 }
 
 .status-icon {
-  width: 110px; /* Proportional width based on viewport */
-  height: 110px; /* Proportional height */
+  width: 90px;
+  height: 90px;
   background-color: #626ed4;
-  border-radius: 50%; /* Keeps the circle shape */
+  border-radius: 50%;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  left: -20px; /* Positioning it slightly outside the box */
 }
 
 .status-icon i {
@@ -62,84 +60,82 @@
   transform: scaleX(-1);
 }
 
-.status-info {
-  margin-left: 60px; /* Adjusted margin to compensate for larger icon */
-}
-
 .status-info h3 {
-  margin: 0;
-  font-size: 42px; /* Smaller font size */
-  font-weight: bold;
-  color: #333;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+  color: #171a1fff;
+  margin-bottom: 10px;
 }
 
 .status-info p {
-  margin: 4px 0 0;
-  font-size: 20px; /* Smaller font size */
-  color: #666;
-}
-
-hr {
-  border: 0;
-  border-top: 1px solid #ddd;
-  margin: 16px 0;
+  font-family: "Inter", sans-serif; /* Heading */
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #171a1fff;
 }
 
 .delivery-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  padding: 29px 15px;
+  margin: 0 44px;
+  border-top: 1px solid #9095a1ff;
+}
+
+.detail-panel {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
 }
 
-.delivery-details .from,
-.delivery-details .to {
-  font-size: 16px; /* Smaller font size */
-  color: #333;
-  margin-right: 10px;
+.detail-panel .label {
+  font-family: "Open Sans", sans-serif; /* Body */
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #171a1fff;
 }
 
-.delivery-details strong {
-  font-weight: bold;
-  color: #333;
-  margin-left: 10px;
-  margin-right: 20px;
+.detail-panel .value {
+  font-family: "Open Sans", sans-serif; /* Body */
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #171a1fff;
 }
 
-/* Media Queries for Mobile View */
-@media (max-width: 768px) {
-  .status-icon {
-    width: 90px;
-    height: 90px; /* Proportional height for mobile view */
+@media (max-width: 970px) {
+  .order-status-container {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .delivery-details {
+    margin: 0 22px;
   }
 
-  .status-icon i {
-    font-size: 50px; /* Larger icon size inside the circle */
+  .status-info-container {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 460px) {
+  .detail-panel {
+    flex-direction: column;
+    gap: 10px;
   }
 
   .tracking-details-container h2 {
-    font-size: 25px; /* Proportional font size for smaller screens */
-    line-height: 20px; /* Adjusted line height */
-  }
-
-  .order-info {
-    font-size: 16px; /* Proportional font size for smaller screens */
+    font-size: 25px;
+    line-height: 35px;
   }
 
   .status-info h3 {
-    font-size: 30px; /* Proportional font size */
-  }
-
-  .status-info p {
-    font-size: 18px; /* Proportional font size */
-  }
-
-  .delivery-details .from,
-  .delivery-details .to {
-    font-size: 13px; /* Proportional font size */
-  }
-}
-
-@media (max-width: 1024px) {
-  .order-info-container {
-    padding-left: 10px;
+    font-size: 25px;
+    line-height: 30px;
   }
 }

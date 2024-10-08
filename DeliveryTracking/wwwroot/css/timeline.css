@@ -10,7 +10,7 @@
 .timeline-wrapper .title-wrapper {
   position: relative;
   text-align: right;
-  font-family: "Archivo", system-ui;
+  font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 28px;
@@ -35,7 +35,7 @@
 
 .stepper {
   padding-left: 0;
-  font-family: "Inter", system-ui;
+  font-family: "Inter", sans-serif;
   color: #171a1fff;
 }
 
