@@ -68,7 +68,8 @@
 }
 
 .active .stepper__icon {
-  background-color: #e0e1faff;
+    background-color: #FFF3D7FF;
+    
 }
 
 .stepper__icon i {
@@ -77,19 +78,19 @@
 }
 
 .active .stepper__icon i {
-  color: #636ae8ff;
+  color: #FFC94CFF;
 }
 
 .stepper__item:not(:last-child):after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: calc(var(--circle-size) + var(--spacing));
-  bottom: var(--spacing);
-  z-index: -1;
-  transform: translateX(calc(var(--circle-size) / 2));
-  width: 1px;
-  background-color: #878cedff;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(var(--circle-size) + var(--spacing));
+    bottom: var(--spacing);
+    z-index: -1;
+    transform: translateX(calc(var(--circle-size) / 2));
+    width: 1px;
+    background-color: #FFC94CFF;
 }
 
 .stepper__title {

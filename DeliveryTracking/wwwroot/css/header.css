@@ -52,11 +52,11 @@
 }
 
 .search-input:focus {
-  border-color: #5f63f2;
+  border-color: #ffc94cff; /* Changed to orange-yellow */
 }
 
 .search-btn {
-  background-color: #5f63f2;
+  background-color: #ffc94cff;
   color: white;
   padding: 10px 20px;
   border-radius: 15px;
@@ -72,7 +72,7 @@
 }
 
 .search-btn:hover {
-  background-color: #4e54c8;
+  background-color: #e0a828; /* Slightly darker shade for hover effect */
 }
 
 @media (max-width: 740px) {
