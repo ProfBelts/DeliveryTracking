@@ -75,7 +75,7 @@ html {
 /* Custom Styling */
 
 .main-container {
-  padding: 50px;
+  padding: 50px 50px 26px 50px;
 }
 
 .inner-wrapper {
@@ -85,6 +85,6 @@ html {
 
 @media (max-width: 1024px) {
   .main-container {
-    padding: 30px 15px 15px 15px;
+    padding: 30px 15px 0px 15px;
   }
 }

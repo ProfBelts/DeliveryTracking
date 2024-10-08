@@ -1,8 +1,4 @@
-﻿.order-info-container {
-  font-family: "Archivo", sans-serif;
-}
-
-.tracking-details-container {
+﻿.tracking-details-container {
   margin-bottom: 20px;
 }
 
@@ -89,22 +85,18 @@
 .detail-panel {
   display: flex;
   gap: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #171a1fff;
 }
 
 .detail-panel .label {
-  font-family: "Open Sans", sans-serif; /* Body */
-  font-size: 14px;
-  line-height: 22px;
   font-weight: 700;
-  color: #171a1fff;
 }
 
 .detail-panel .value {
-  font-family: "Open Sans", sans-serif; /* Body */
-  font-size: 14px;
-  line-height: 22px;
   font-weight: 400;
-  color: #171a1fff;
 }
 
 @media (max-width: 970px) {
