@@ -3,6 +3,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddWebOptimizer(pipeline =>
+{
+    pipeline.AddCssBundle("css/bundle.css", "css/site.css", "css/**/*.css");
+});
+
+if (builder.Environment.IsDevelopment())
+{
+    builder.Services.AddWebOptimizer(minifyJavaScript: false, minifyCss: false);
+}
 
 var app = builder.Build();
 
@@ -15,6 +24,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseWebOptimizer();
 app.UseStaticFiles();
 
 app.UseRouting();

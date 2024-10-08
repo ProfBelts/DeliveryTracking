@@ -1,99 +1,145 @@
-﻿.order-status-container {
-  margin-bottom: 100px;
-  text-align: center; /* Center text */
-  margin-left: auto; /* Center horizontally */
-  margin-right: auto; /* Center horizontally */
+﻿.order-info-container {
+  font-family: "Archivo", system-ui;
 }
 
-.order-status-container h2 {
-  font-family: "Archivo", sans-serif;
-  font-size: 24px;
-  line-height: 36px;
+.tracking-details-container {
+  margin-bottom: 20px;
+}
+
+.tracking-details-container h2 {
+  font-family: "Archivo", system-ui;
+  font-size: 30px;
   font-weight: 700;
-}
-
-.tracking-progress-bar {
-  padding: 10px;
-  overflow: hidden;
-}
-
-.tracking-progress-bar .row {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
+  color: #171a1fff; /* neutral-900 */
   margin: 0;
+  margin-bottom: 10px;
+}
+
+.order-info {
+  font-family: "Inter", system-ui;
+  font-size: 20px; /* Smaller font size */
+  line-height: 10px; /* Adjusted line height */
+  font-weight: 500;
+  color: #6e7787ff; /* neutral-550 */
+}
+
+.order-status-container {
+  display: flex;
+  flex-direction: column;
+  background: #e9ecef; /* neutral-200 */
+  border-radius: 6px; /* border-m */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  position: relative; /* To position icon outside */
   width: 100%;
 }
 
-.tracking-progress-bar .row .col {
-  flex: 1;
-  position: relative;
-  text-align: center;
-  color: #aaa;
-  font-family: Arial, sans-serif;
-  padding-top: 60px; /* Increased padding to add space between the circle and label */
+.status-header {
+  display: flex;
+  align-items: center;
+  margin: 20px;
 }
 
-.tracking-progress-bar .row .col:before {
-  content: "";
+.status-icon {
+  width: 110px; /* Proportional width based on viewport */
+  height: 110px; /* Proportional height */
+  background-color: #626ed4;
+  border-radius: 50%; /* Keeps the circle shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background-color: #ccc;
-  z-index: 1;
-  transform: translateY(-50%);
+  left: -20px; /* Positioning it slightly outside the box */
 }
 
-.tracking-progress-bar .row .col:first-child:before {
-  left: 50%;
+.status-icon i {
+  font-size: 50px; /* Proportional icon size inside the circle */
+  color: white;
 }
 
-.tracking-progress-bar .row .col:last-child:before {
-  right: 50%;
+.status-icon-flipped i {
+  transform: scaleX(-1);
 }
 
-.tracking-progress-bar .row .col:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
-  background-color: #ccc;
-  border-radius: 50%;
-  z-index: 2;
+.status-info {
+  margin-left: 60px; /* Adjusted margin to compensate for larger icon */
 }
 
-.tracking-progress-bar .row .col.done:after {
-  background-color: #636ae8ff;
+.status-info h3 {
+  margin: 0;
+  font-size: 42px; /* Smaller font size */
+  font-weight: bold;
+  color: #333;
 }
 
-.tracking-progress-bar .row .col.done:before {
-  background-color: #636ae8ff;
+.status-info p {
+  margin: 4px 0 0;
+  font-size: 20px; /* Smaller font size */
+  color: #666;
 }
 
-.tracking-progress-bar .row .col.current:after {
-  background-color: white;
-  border: 3px solid #636ae8ff;
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 16px 0;
 }
 
-.tracking-progress-bar .row .col.current:before {
-  background-color: #636ae8ff;
+.delivery-details {
+  display: flex;
+  justify-content: space-between;
 }
 
-.tracking-progress-bar .row .col.done {
-  color: #636ae8ff;
+.delivery-details .from,
+.delivery-details .to {
+  font-size: 16px; /* Smaller font size */
+  color: #333;
+  margin-right: 10px;
 }
 
-.tracking-progress-bar .row .col.current {
-  color: #636ae8ff;
+.delivery-details strong {
+  font-weight: bold;
+  color: #333;
+  margin-left: 10px;
+  margin-right: 20px;
 }
 
-ul,
-li {
-  padding: 0;
-  list-style: none;
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  .status-icon {
+    width: 90px;
+    height: 90px; /* Proportional height for mobile view */
+  }
+
+  .status-icon i {
+    font-size: 50px; /* Larger icon size inside the circle */
+  }
+
+  .tracking-details-container h2 {
+    font-size: 25px; /* Proportional font size for smaller screens */
+    line-height: 20px; /* Adjusted line height */
+  }
+
+  .order-info {
+    font-size: 16px; /* Proportional font size for smaller screens */
+  }
+
+  .status-info h3 {
+    font-size: 30px; /* Proportional font size */
+  }
+
+  .status-info p {
+    font-size: 18px; /* Proportional font size */
+  }
+
+  .delivery-details .from,
+  .delivery-details .to {
+    font-size: 13px; /* Proportional font size */
+  }
+}
+
+@media (max-width: 1024px) {
+  .order-info-container {
+    padding-left: 10px;
+  }
 }
