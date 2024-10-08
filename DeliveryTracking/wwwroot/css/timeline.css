@@ -117,7 +117,7 @@
   }
 
   .timeline-wrapper .title-wrapper:before {
-    transform: translateX(calc(var(--circle-size) / 2 + 19px));
+    left: calc(var(--circle-size) / 2 + 19px);
   }
 
   .stepper-wrapper {
