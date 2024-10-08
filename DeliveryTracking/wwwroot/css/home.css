@@ -1,66 +1,155 @@
-﻿.container {
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px; /* Padding around the container */
+    min-width: 320px;
 }
 
 main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-    width: 70%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 800px; /* Maximum width for the main content */
+    padding: 20px; /* Padding for the main area */
+    
 }
 
 .tracking-section {
     max-width: 600px;
+    text-align: left; /* Center text alignment */
+    position: relative; /* Allow absolute positioning of children */
+    left: -130px;
 }
 
     .tracking-section h2 {
-        font-size: 56px;
-        color: #f5ba31;
-        margin-bottom: 10px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        font-size: 46px; /* Font size for the heading */
+        color: #f5ba31; /* Gold color for the text */
+        margin-bottom: 10px; /* Space below the heading */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
+        display: flex; /* Use flex to align icon and text */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
     }
 
-    .tracking-section p {
-        font-size: 16px;
-        color: #666;
-        margin-bottom: 20px;
+.delivery-icon {
+    position: absolute; /* Positioning icon absolutely */
+    top: -45px; /* Align with the top of the h2 */
+    right: -450px; /* Move the icon to the right */
+    display: flex;
+}
+
+    .delivery-icon img {
+        width: 400px; /* Set width of the icon to 300px */
+        height: auto; /* Maintain aspect ratio */
     }
+
+.tracking-section p {
+    font-size: 18px; /* Font size for paragraph */
+    color: #666; /* Dark grey for text color */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
 
 .tracking-input {
     display: flex;
-    align-items: center;
 }
 
     .tracking-input input {
-        padding: 10px;
-        width: 350px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
+        padding: 10px; /* Padding for input */
+        width: 80%; /* Input width */
+        max-width: 350px; /* Limit maximum width */
+        border: 1px solid #ccc; /* Light border for input */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 16px; /* Font size for input */
+        margin-right: 10px; /* Space below the input */
     }
 
     .tracking-input button {
-        padding: 10px 20px;
-        background-color: #f5ba31;
-        border: none;
-        border-radius: 5px;
-        color: white;
-        font-size: 16px;
-        margin-left: 10px;
-        cursor: pointer;
+        padding: 10px 20px; /* Padding for button */
+        background-color: #f5ba31; /* Gold background for button */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Rounded corners */
+        color: white; /* White text color */
+        font-size: 16px; /* Font size for button */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s; /* Smooth transition for hover */
     }
 
         .tracking-input button:hover {
-            background-color: #e0a421;
+            background-color: #e0a421; /* Darker shade on hover */
         }
 
-.delivery-icon img {
-    top: -10px;
-    width: 300px;
-    height: auto;
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1072px) {
+
+    .tracking-section {
+        left: 0;
+        max-width: none;
+    }
+    
+    .delivery-icon {
+        position: inherit;
+        width: 250px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px; /* Reduced padding for smaller screens */
+        margin-left: 0;
+    }
+
+
+    .tracking-section{
+        text-align: left;
+    }
+
+    .tracking-section h2 {
+        font-size: 36px; /* Smaller heading size */
+    }
+
+    .tracking-section p {
+        font-size: 14px; /* Smaller paragraph text */
+    }
+
+    .tracking-input input {
+        
+        font-size: 11px;
+    }
+
+    .tracking-input button {
+        font-size: 11px;
+    }
+
+    .delivery-icon {
+        /*right: -160px;*/ /* Adjust position for mobile if needed */
+        position: inherit;
+    }
+
+    .delivery-icon img{
+        width: 150px;
+    }
+}
+
+@media (max-width: 578px){
+    .tracking-section h2 {
+        font-size: 27px; /* Smaller heading size */
+    }
+
+    .delivery-icon img {
+        width: 120px;
+    }
 }
