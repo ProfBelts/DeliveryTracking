@@ -1,0 +1,66 @@
+﻿.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    width: 70%;
+    max-width: 1200px;
+}
+
+.tracking-section {
+    max-width: 600px;
+}
+
+    .tracking-section h2 {
+        font-size: 56px;
+        color: #f5ba31;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .tracking-section p {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+.tracking-input {
+    display: flex;
+    align-items: center;
+}
+
+    .tracking-input input {
+        padding: 10px;
+        width: 350px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .tracking-input button {
+        padding: 10px 20px;
+        background-color: #f5ba31;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+        .tracking-input button:hover {
+            background-color: #e0a421;
+        }
+
+.delivery-icon img {
+    top: -10px;
+    width: 300px;
+    height: auto;
+}
