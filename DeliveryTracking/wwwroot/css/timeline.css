@@ -1,0 +1,138 @@
+:root {
+  --circle-size: 51px;
+  --spacing: 0px;
+}
+
+.timeline-wrapper {
+  width: 100%;
+}
+
+.timeline-wrapper .title-wrapper {
+  position: relative;
+  text-align: right;
+  font-family: "Archivo", system-ui;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 28px;
+  color: #323842ff;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+.timeline-wrapper .title-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(var(--circle-size) / 2 + 42px);
+  bottom: 0;
+  border-left: 1px dashed #9095a0ff;
+}
+
+.stepper-wrapper {
+  transform: translateY(-24px);
+}
+
+.stepper {
+  padding-left: 0;
+  font-family: "Inter", system-ui;
+  color: #171a1fff;
+}
+
+.stepper__item {
+  position: relative;
+  display: flex;
+  align-items: start;
+  gap: 24px;
+}
+
+.stepper__item:not(:last-child) {
+  padding-bottom: 38px;
+}
+
+.stepper__label {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.stepper__icon {
+  /* flex: 0 0 var(--circle-size); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: 50%;
+  background-color: #f3f4f6ff;
+}
+
+.active .stepper__icon {
+    background-color: #FFF3D7FF;
+    
+}
+
+.stepper__icon i {
+  font-size: 25px;
+  color: #565e6cff;
+}
+
+.active .stepper__icon i {
+  color: #FFC94CFF;
+}
+
+.stepper__item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(var(--circle-size) + var(--spacing));
+    bottom: var(--spacing);
+    z-index: -1;
+    transform: translateX(calc(var(--circle-size) / 2));
+    width: 1px;
+    background-color: #FFC94CFF;
+}
+
+.stepper__title {
+  text-wrap: nowrap;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.stepper__desc {
+  font-size: 14px;
+  line-height: 22px;
+  color: #9095a0ff;
+}
+
+.stepper-wrapper {
+  padding: 23px 41px;
+  border: 1px solid #bcc1caff;
+  border-radius: 6px;
+}
+
+@media (max-width: 380px) {
+  .title-wrapper {
+    padding-right: 15px;
+  }
+
+  .timeline-wrapper .title-wrapper:before {
+    transform: translateX(calc(var(--circle-size) / 2 + 19px));
+  }
+
+  .stepper-wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .stepper__item {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .stepper__content {
+    margin-left: calc(var(--circle-size) + 24px);
+    left: 0px;
+  }
+}

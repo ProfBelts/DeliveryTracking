@@ -1,34 +1,9 @@
 ﻿@page
-@model IndexModel
 @{
     ViewData["Title"] = "Tracking page";
 }
 
-<div class="tracking-container">
-    <div class="header-container">
-        <div class="logo-title">
-            <img src="/path-to-your-icon.png" alt="Logo" class="logo-icon">
-            <h1>Delivery Tracker</h1>
-        </div>
-
-        <div class="search-bar">
-            <input type="text" placeholder="Enter Parcel ID" class="search-input">
-            <button class="search-btn">
-                <i class="fa fa-search"></i> Search
-            </button>
-        </div>
-    </div>
-    
-    <div class="section status-section">
-        <partial name="Partials/_Status" />
-    </div>
-
-    <div class="section info-section">
-        <partial name="Partials/_InfoPanels" />
-    </div>
-
-    <div class="section track-details-section">
-        <partial name="Partials/_TrackDetails" />
-    </div>
+<div class="inner-wrapper">
+    <partial name="Partials/_Status" />
+    <partial name="Partials/_Timeline" />
 </div>
-
