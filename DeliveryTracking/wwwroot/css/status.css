@@ -42,15 +42,15 @@
 }
 
 .status-icon {
-  width: 110px; /* Proportional width based on viewport */
-  height: 110px; /* Proportional height */
-  background-color: #626ed4;
-  border-radius: 50%; /* Keeps the circle shape */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: -20px; /* Positioning it slightly outside the box */
+    width: 110px; /* Proportional width based on viewport */
+    height: 110px; /* Proportional height */
+    background-color: #FFC94CFF;
+    border-radius: 50%; /* Keeps the circle shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -20px; /* Positioning it slightly outside the box */
 }
 
 .status-icon i {
