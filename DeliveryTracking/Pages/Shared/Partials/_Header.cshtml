@@ -1,4 +1,7 @@
-﻿<div class="tracking-container">
+﻿@using Microsoft.AspNetCore.Mvc.ViewFeatures
+
+@{
+    <div class="tracking-container">
     <div class="header-container">
         <div class="logo-title">
             <div class="img-container">
@@ -7,11 +10,16 @@
             <h1>Delivery Tracker</h1>
         </div>
 
-        <div class="search-bar">
-            <input type="text" placeholder="Enter Parcel ID" class="search-input">
-            <button class="search-btn">
-                <i class="fa fa-search"></i> Search
-            </button>
-        </div>
+        @* Check if the current path is not the home page *@
+        @if (!ViewContext.RouteData.Values["page"].ToString().Equals("/Home", StringComparison.OrdinalIgnoreCase))
+        {
+            <div class="search-bar">
+                <input type="text" placeholder="Enter Parcel ID" class="search-input">
+                <button class="search-btn">
+                    <i class="fa fa-search"></i> Search
+                </button>
+            </div>
+        }
     </div>
 </div>
+}
