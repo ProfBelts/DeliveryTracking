@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewData["Title"] = "Tracking page";
+}
+
+<div class="inner-wrapper">
+    @await Html.PartialAsync("Partials/_Status")
+    <!--<partial name="Partials/_Status" />-->
+    <partial name="Partials/_Timeline" />
+</div>
