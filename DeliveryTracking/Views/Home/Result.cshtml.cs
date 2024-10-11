@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace DeliveryTracking.Pages;
+namespace DeliveryTracking.Views.Home;
 
 public class IndexModel : PageModel
 {

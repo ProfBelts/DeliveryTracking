@@ -1,8 +1,7 @@
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddControllersWithViews();
 builder.Services.AddWebOptimizer(pipeline =>
 {
     pipeline.AddCssBundle("css/bundle.css", "css/site.css", "css/**/*.css");
@@ -31,6 +30,20 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapRazorPages();
+// Redirect index.html to Home/Index
+app.Use(async (context, next) =>
+{
+    if (context.Request.Path.Equals("/index.html", StringComparison.OrdinalIgnoreCase))
+    {
+        context.Response.Redirect("/Home");
+        return;
+    }
+    await next();
+});
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
 app.Run();

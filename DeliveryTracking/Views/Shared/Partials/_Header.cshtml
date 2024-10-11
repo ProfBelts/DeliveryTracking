@@ -1,7 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Mvc.ViewFeatures
 
-@{
-    <div class="tracking-container">
+<div class="tracking-container">
     <div class="header-container">
         <div class="logo-title">
             <div class="img-container">
@@ -11,7 +10,13 @@
         </div>
 
         @* Check if the current path is not the home page *@
-        @if (!ViewContext.RouteData.Values["page"].ToString().Equals("/Home", StringComparison.OrdinalIgnoreCase))
+        @{
+            var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+            var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+        }
+
+        @if (!string.Equals(currentController, "Home", StringComparison.OrdinalIgnoreCase) ||
+        !string.Equals(currentAction, "Index", StringComparison.OrdinalIgnoreCase))
         {
             <div class="search-bar">
                 <input type="text" placeholder="Enter Parcel ID" class="search-input">
@@ -22,4 +27,3 @@
         }
     </div>
 </div>
-}
